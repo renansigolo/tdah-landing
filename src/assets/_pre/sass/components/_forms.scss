@@ -1,0 +1,83 @@
+/* Forms
+  =============== */
+
+
+/* Style Placeholders */
+
+::placeholder {
+    color: $white;
+}
+
+
+/* icon prefix focus color */
+
+.input-field .prefix.active {
+    color: $white;
+}
+
+
+/* label color */
+
+.input-field label {
+    color: $white;
+}
+
+// Focused input bottom bar for text
+input[type=text]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid $white;
+    box-shadow: 0 1px 0 0 $white;
+}
+
+// Focused input bottom bar for email
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px solid $white;
+    box-shadow: 0 1px 0 0 $white;
+}
+
+// Focused text style for text
+input[type=text]:not(.browser-default):focus:not([readonly])+label {
+    color: $white;
+}
+
+// Focused text style for email
+input[type=email]:not(.browser-default):focus:not([readonly])+label {
+    color: $white;
+}
+
+// Text Area Styles
+textarea.materialize-textarea {
+    // General Styles
+    background-color: transparent;
+    border: none;
+    border-bottom: $input-border;
+    border-radius: 0;
+    outline: none;
+    height: $input-height;
+    width: 100%;
+    font-size: $input-font-size;
+    margin: $input-margin;
+    padding: $input-padding;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: $input-transition;
+    // Disabled input style
+    &:disabled,
+    &[readonly="readonly"] {
+        color: $input-disabled-color;
+        border-bottom: $input-disabled-border;
+    }
+    // Disabled label style
+    &:disabled+label,
+    &[readonly="readonly"]+label {
+        color: $input-disabled-color;
+    }
+    // Focused input style
+    &:focus:not([readonly]) {
+        border-bottom: 1px solid #fff;
+        box-shadow: 0 1px 0 0 #fff;
+    }
+    // Focused label style
+    &:focus:not([readonly])+label {
+        color: #fff;
+    }
+}

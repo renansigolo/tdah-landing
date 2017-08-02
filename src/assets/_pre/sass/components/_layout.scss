@@ -1,0 +1,44 @@
+/* Layout
+  =============== */
+
+#main h1 {
+    color: $orange;
+    margin-top: 30vh;
+    font-size: 10.2rem;
+    @media #{$small-and-down} {
+        font-size: 7.2rem;
+    }
+}
+
+#features .row {
+    margin: 2vh auto;
+}
+
+.card {
+    min-height: 40vh;
+}
+
+#download .row {
+    margin-top: 20vh;
+}
+
+#contact .row {
+    margin-top: 8vh;
+}
+
+#footer {
+    margin: 2vh auto;
+}
+
+//Parallax height
+#main .parallax-container {
+    height: 500px;
+}
+
+#download .parallax-container {
+    height: 74vh;
+}
+
+#contact .parallax-container {
+    height: 72vh;
+}
