@@ -30,6 +30,20 @@
     margin: 2vh auto;
 }
 
+#thanks {
+    background-image: url(../../../../images/thanks/stars.png);
+    background-size: cover;
+    min-height: 100vh;
+    h1 {
+        margin-top: 15vh;
+    }
+    @media #{$medium-and-down} {
+        button {
+            margin-bottom: 10vh;
+        }
+    }
+}
+
 //Parallax height
 #main .parallax-container {
     height: 500px;
