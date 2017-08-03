@@ -1,7 +1,7 @@
 <?php
-$to = "contatolivedesign@gmail.com";
+$to = "renan.sigolo@gmail.com";
 $subject = "TDAH Website";
-$headers = "From: contatolivedesign@gmail.com";
+$headers = "From: renan.sigolo@gmail.com";
 $name = $_REQUEST['name'];
 $email = $_REQUEST['email'] ;
 $message = $_REQUEST['message'] ;
