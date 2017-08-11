@@ -26,9 +26,8 @@
     margin-top: 8vh;
     p {
         padding: 2vh 1vh 5vh 0;
-        input,
         label {
-            color: $white;
+            color: $white !important;
         }
     }
 }
