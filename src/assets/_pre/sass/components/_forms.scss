@@ -81,3 +81,15 @@ textarea.materialize-textarea {
         color: #fff;
     }
 }
+
+
+/* Checkbox color */
+
+.orange[type="checkbox"].filled-in:checked+label:after {
+    border: 1px solid #8e24aa !important;
+    background-color: #8e24aa !important;
+}
+
+.orange[type="checkbox"].filled-in+label:after {
+    border: 2px solid $white !important;
+}

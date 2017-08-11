@@ -24,6 +24,13 @@
 
 #contact .row {
     margin-top: 8vh;
+    p {
+        padding: 2vh 1vh 5vh 0;
+        input,
+        label {
+            color: $white;
+        }
+    }
 }
 
 #footer {
@@ -50,9 +57,9 @@
 }
 
 #download .parallax-container {
-    min-height: 74vh;
+    min-height: 92vh;
 }
 
 #contact .parallax-container {
-    min-height: 72vh;
+    min-height: 80vh;
 }

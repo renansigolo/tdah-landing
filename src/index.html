@@ -69,6 +69,7 @@
                 <img src="images/download/bkg.png">
             </div>
             <div class="row">
+                <h1 class="center-align white-text">Em Breve</h1>
                 <div class="col s12 l6 center-align">
                     <a href="#"><img class="responsive-img" src="images/download/apple-store-badge.png"></a>
                 </div>
@@ -86,7 +87,8 @@
                     <div class="card-content black-text">
                         <img class="responsive-img circle" src="images/team/profile-renan.png">
                         <span class="card-title">Renan Sigolo</span>
-                        <!--<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>-->
+                        <h5>(11) 9 9898-2204</h5>
+                        <h5>renan.sigolo@gmail.com</h5>
                     </div>
                 </div>
             </div>
@@ -95,7 +97,8 @@
                     <div class="card-content black-text">
                         <img class="responsive-img circle" src="images/team/profile-manoela.png">
                         <span class="card-title">Manoela Gomes</span>
-                        <!--<p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>-->
+                        <h5>(11) 9 8453-2757</h5>
+                        <h5>manoela_sgomes@hotmail.com</h5>
                     </div>
                 </div>
             </div>
@@ -126,6 +129,12 @@
                                 <textarea name="message" id="message" class="materialize-textarea"></textarea>
                                 <label for="message">Mensagem</label>
                             </div>
+                            <div class="col s12 center-align">
+                                <p>
+                                    <input type="checkbox" class="filled-in orange" id="filled-in-box" required/>
+                                    <label for="filled-in-box">Eu não sou um robo !</label>
+                                </p>
+                            </div>
                             <div class="center-align">
                                 <button class="btn waves-effect waves-light orange" type="submit" name="action">
                                     <i class="material-icons right">send</i>Enviar</button>
@@ -145,8 +154,23 @@
     <!--Scripts-->
     <script src="assets/js/libs.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
-    <!-- INSERT YOUR GOOGLE ANALYTICS HERE -->
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
+        ga('create', 'UA-82193310-4', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 
 </html>
