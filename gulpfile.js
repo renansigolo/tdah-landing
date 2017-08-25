@@ -2,6 +2,7 @@
 
 //GLOBAL
 var gulp = require('gulp');
+var browserSync = require('browser-sync').create();
 
 //VARIABLES FOR WATCH
 var sass = require('gulp-sass');
@@ -42,7 +43,8 @@ gulp.task('scss', function () {
             }
         }))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('src/assets/css/'));
+        .pipe(gulp.dest('src/assets/css/'))
+        .pipe(browserSync.stream());
 });
 
 //Watch JS files -> sourcemap, minifiy with uglify, concat
@@ -62,7 +64,8 @@ gulp.task('js', function () {
             }
         }))
         .pipe(sourcemaps.write('./'))
-        .pipe(gulp.dest('src/assets/js/'));
+        .pipe(gulp.dest('src/assets/js/'))
+        .pipe(browserSync.stream());
 });
 
 //Watch Libs -> concat JS libraries
@@ -145,6 +148,18 @@ gulp.task('copy', ['scss', 'js', 'jsLibs'], function () {
 
 
 //GULP TASKS
+
+// Static server task
+gulp.task('serve', ['scss', 'js'], function () {
+    browserSync.init({
+        server: {
+            baseDir: "./src/"
+        }
+    });
+    gulp.watch('src/assets/_pre/sass/**/*.scss', ['scss']);
+    gulp.watch('src/assets/_pre/js/**/*.js', ['js']);
+    gulp.watch("src/*.html").on('change', browserSync.reload);
+});
 
 //Watch task
 gulp.task('watch', function () {
