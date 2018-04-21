@@ -111,7 +111,7 @@ gulp.task('sitemap', function () {
             read: false
         })
         .pipe(sitemap({
-            siteUrl: 'https://www.INSERT YOUR WEBSITE ADDRESS HERE.com.br'
+            siteUrl: 'https://www.tdah.tk'
         }))
         .pipe(gulp.dest('dist'));
 });

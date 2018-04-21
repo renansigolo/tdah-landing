@@ -9,5 +9,5 @@ $txt = "Nome: $name\n\n Email: $email \n\n Mensagem: \n\n $message";
 
 mail($to,$subject,$txt,$headers);
 
-header("Location: https://www.renansigolo.com.br/thanks.html"); /* Redirect browser */
+header("Location: https://www.tdah.tk/thanks.html"); /* Redirect browser */
 ?>
