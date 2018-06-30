@@ -1,10 +1,11 @@
 {
-  "name": "tdah_landing",
+  "name": "tdah-landing",
   "version": "1.2.1",
   "main": "index.html",
   "author": "Renan Sigolo <renan.sigolo@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "serve": "gulp serve",
     "build": "gulp",
     "update": "yarn upgrade-interactive --latest"
   },
@@ -12,7 +13,7 @@
     "materialize-css": "^0.100.2"
   },
   "devDependencies": {
-    "browser-sync": "^2.24.4",
+    "browser-sync": "^2.24.5",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^5.0.0",
