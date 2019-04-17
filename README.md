@@ -1,4 +1,6 @@
-# Landing Page TDAH
+# Landing Page TDAH - (DEPRECATED)
+
+> New project hosted unde [My ADHD Landing](https://github.com/renansigolo/my-adhd-landing)
 
 Landing page do Projeto TDAH
 
@@ -8,7 +10,7 @@ All documentation can be found at [https://github.com/renansigolo/tdah-landing](
 
 ## Build
 
-Run `yarn build` to build the project.
+Run `npm run build` to build the project.
 
 ## Built With
 
@@ -17,7 +19,6 @@ Run `yarn build` to build the project.
 ## Dev tools
 
 * [Gulp](https://gulpjs.com/) - Automate and enhance your workflow
-* [Yarn](https://yarnpkg.com/en/) -  Fast, reliable, and secure dependency management
 
 ## Authors
 

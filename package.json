@@ -5,12 +5,11 @@
   "author": "Renan Sigolo <renan.sigolo@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "serve": "gulp serve",
-    "build": "gulp",
-    "update": "yarn upgrade-interactive --latest"
+    "start": "gulp serve",
+    "build": "gulp"
   },
   "dependencies": {
-    "materialize-css": "^0.100.2"
+    "materialize-css": "^1.0.0"
   },
   "devDependencies": {
     "browser-sync": "^2.24.5",
